@@ -2,29 +2,102 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-nav{
-    background-color: #8E1616;
-    display: flex;
-    justify-content: space-between;
-}
-nav img{
-    display: flex;
-    justify-content: space-around;
-    margin: 5px;
-    align-items: center;
-}
-nav li{
-    display: inline-block;
-    justify-content: space-between;
-    padding: 20px;
-    align-items: center;
-    text-align: center;
-    list-style: none;
-}
-nav a{
-    text-decoration: none;
-    color: black;
+    border-radius: 5px;
     font-family:Verdana;
     font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+
+}
+body{
+    background-color: #161616;
+}
+
+
+.bar, .poison{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 5px;
+    background-color: #8E1616;
+
+}
+.poison{
+    justify-content: center;
+}
+
+nav video{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 130px;
+    max-height: 60px;
+    margin: 5px;
+    
+}
+
+.bar li, .poison li, .box{
+    display: inline-block;
+    margin: 5px;
+    padding: 20px;
+    list-style: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+    
+}
+
+.bar a, .poison a, .box{
+    text-decoration: none;
+}
+
+.bar li:hover, .poison li:hover, .box:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.bar a:hover, .poison a:hover .box:hover{
+    color: white;
+    opacity: 0.3;
+}
+
+
+@media (min-width:320px) and (max-width: 768px){
+    .bar li, .poison li{
+        border: 2px solid black;
+    }
+    .poison li{
+        width: 330px;
+        padding: 20px;
+        justify-content: center;
+    }
+}
+
+.choices {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.box {
+    margin: 10px;
+    padding: 20px;
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: #8E1616;
+    text-align: center;
+}
+
+
+header{
+    background-image: url(no/yoyo.jpg);
+    padding: 10%;
+    margin: 10px;
+    color:white;
+}
+
+
+footer{
+    background-color: #8E1616;
+    margin: 10px;
+    padding: 5px;
 }
